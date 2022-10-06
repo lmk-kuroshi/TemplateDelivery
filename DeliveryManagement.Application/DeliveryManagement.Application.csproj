@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeliveryManagement.Data\DeliveryManagement.Data.csproj" />
+    <ProjectReference Include="..\DeliveryManagement.Ultilities\DeliveryManagement.Ultilities.csproj" />
+    <ProjectReference Include="..\DeliveryManagement.ViewModels\DeliveryManagement.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
