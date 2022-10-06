@@ -10,6 +10,5 @@ namespace DeliveryManagement.ViewModels.Catalog.Department
     public class GetDepartmentPagingRequest : PagingRequestBase
     {
         public string DepartmentId { get; set; }
-        public DateTime? BookDate { get; set; }
     }
 }

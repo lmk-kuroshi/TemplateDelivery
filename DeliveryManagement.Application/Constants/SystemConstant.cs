@@ -8,6 +8,6 @@ namespace DeliveryManagement.Application.Constants
 {
     public class SystemConstant
     {
-        public const string MainConnectionString = "DeliveryManagement";
+        public const string MainConnectionString = "DeliveryManagementDb";
     }
 }

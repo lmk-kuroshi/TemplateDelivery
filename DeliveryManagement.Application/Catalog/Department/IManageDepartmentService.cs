@@ -14,7 +14,7 @@ namespace DeliveryManagement.Application.Catalog.Department
         Task<int> Update(DepartmentUpdateRequest request);
         Task<int> Delete(string departmentId);
         /*Task<PagedResult<DepartmentViewModel>> GetAllPagingWithKeyWord(string keyword, PagingRequestBase request);*/
-        Task<PagedResult<DepartmentViewModel>> GetAllPaging(GetDepartmentPagingRequest request);
+        Task<PagedResult<DepartmentViewModel>> GetAllPaging(PagingRequestBase request);
         Task<DepartmentViewModel> GetById(string DepartmentId);
 
     }

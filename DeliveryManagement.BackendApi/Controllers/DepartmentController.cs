@@ -1,5 +1,6 @@
 ﻿using DeliveryManagement.Application.Catalog.Department;
 using DeliveryManagement.ViewModels.Catalog.Department;
+using DeliveryManagement.ViewModels.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -19,7 +20,7 @@ namespace DeliveryManagement.BackendApi.Controllers
 
         [HttpGet("public-paging")]
         [SwaggerOperation(Summary = "Get all paging")]
-        public async Task<IActionResult> Get([FromQuery] GetDepartmentPagingRequest request)
+        public async Task<IActionResult> Get([FromQuery] PagingRequestBase request)
         {
             var deps = await _manageDepartmentService.GetAllPaging(request);
             return Ok(deps);

@@ -42,7 +42,7 @@ namespace DeliveryManagement.Application.Catalog.Department
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<PagedResult<DepartmentViewModel>> GetAllPaging(GetDepartmentPagingRequest request)
+        public async Task<PagedResult<DepartmentViewModel>> GetAllPaging(PagingRequestBase request)
         {
             var query = from p in _context.Departments
                         select new { p };
